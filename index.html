@@ -16,8 +16,9 @@
 <body>
     <header>
         <h2 class="logo">Safari</h2>
+        
+        <button onclick="myFunction()"></button>
        
-        <!-- <button onclick="myFunction()">Dark mode</button> -->
        
         <nav class="navigation">
             <div class="container" onclick="myFunction(this)"></div>
@@ -90,9 +91,9 @@
             hill5.style.marginLeft = value * 1.5 + 'px';
             tree.style.marginRight = value * 1 + 'px';
 
-            $(".theme-switch").on("click", () => {
-  $("body").toggleClass("light-theme");
-});
+//             $(".theme-switch").on("click", () => {
+//   $("body").toggleClass("light-theme");
+// });
 
 
             // function myFunction(x) {
@@ -101,12 +102,12 @@
 
 
         });
-
-        // function myFunction(){
-        //     var element=document.body;
-        //     element.classList.toggle("dark-mode");
-        // }
-
+       
+        function myFunction(){
+            var element=document.body;
+            element.classList.toggle("dark-mode");
+    }    
+    
     </script>
 </body>
 
