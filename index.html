@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari - Make your wildest dreams true here </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Safari</h2>
+       
+        <!-- <button onclick="myFunction()">Dark mode</button> -->
+       
+        <nav class="navigation">
+            <div class="container" onclick="myFunction(this)"></div>
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html" target="_blank">About Us</a>
+            <a href="service.html" target="_blank">Services</a>
+            <a href="contact.html" target="_blank">Contact Us</a>
+        </nav>
+    </header>
+    
+    <section class="parallax"> 
+
+        <!-- <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deleniti, repudiandae est unde atque error consequatur aperiam dolore ex nam autem odio magni consectetur veniam accusantium ab. Voluptatibus, voluptas dicta.
+
+        </p> -->
+
+        <img src="hill1.png" id="hill1">
+        <img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3">
+        <img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5">
+        <img src="tree.png" id="tree">
+        <h2 id="text">Make Your Wildest <br>Dreams True Here !!</h2>
+        <img src="leaf.png" id="leaf">
+        <img src="plant.png" id="hill5">
+    </section>
+    <section class="sec">
+        <h2>Safari</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo numquam beatae quam, reiciendis cumque
+            quidem a ducimus inventore ab consequuntur reprehenderit? Voluptates dolor sint doloremque itaque soluta
+            sed. Ut!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi sequi quibusdam quisquam unde quam, nam
+            asperiores sapiente. Assumenda optio inventore enim itaque nostrum perferendis quo! Incidunt delectus quia
+            dolorum minus.<br><br>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, fuga excepturi. Non numquam doloremque
+            libero quidem laboriosam iste distinctio modi quae sed vero. Nesciunt beatae officia reprehenderit, nam
+            facere repellat!<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestias harum nihil tempore aut
+            omnis nesciunt vel sunt inventore autem sapiente at mollitia aliquam laborum perferendis delectus
+            doloremque, cum magni!<br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus veritatis architecto repellendus
+            necessitatibus perspiciatis molestias adipisci, consectetur totam ab iste velit quod ut consequuntur culpa
+            ea iure perferendis reiciendis.<br><br>
+        </p>
+    </section>
+
+
+    <script>
+        let text = document.getElementById('text');
+        let leaf = document.getElementById('leaf');
+        let hill1 = document.getElementById('hill1');
+        let hill4 = document.getElementById('hill4');
+        let hill5 = document.getElementById('hill5');
+        let tree = document.getElementById('tree');
+
+        window.addEventListener('scroll', () => {
+            let value = window.scrollY;
+            text.style.marginTop = value * 1.5 + 'px';
+
+            leaf.style.marginTop = value * 0.5 + 'px';
+            leaf.style.marginLeft = value * 1 + 'px';
+            hill1.style.marginTop = value * 0.5 + 'px';
+            hill4.style.marginLeft = value * -1.5 + 'px';
+            hill5.style.marginLeft = value * 1.5 + 'px';
+            tree.style.marginRight = value * 1 + 'px';
+
+            $(".theme-switch").on("click", () => {
+  $("body").toggleClass("light-theme");
+});
+
+
+            // function myFunction(x) {
+            //     x.classList.toggle("change");
+            // }
+
+
+        });
+
+        // function myFunction(){
+        //     var element=document.body;
+        //     element.classList.toggle("dark-mode");
+        // }
+
+    </script>
+</body>
+
+</html>

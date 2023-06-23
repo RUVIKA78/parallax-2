@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&family=Rancho&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+*{
+    padding: 0;
+    /* width: 100%; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* background-image: linear-gradient(to right, rgb(211, 140, 140), rgb(80, 56, 147)); */
+    background-image: linear-gradient(to left, rgb(233, 70, 89), rgb(208, 124, 40), rgb(214, 165, 17));
+    min-height: 100vh;
+    width: auto;
+    /* overflow-x: hidden; */
+
+}
+/* .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  } */
+
+  .dark-mode{
+    /* background-image: linear-gradient(right to left,  rgb(18,24,59) ,rgb(28,34,189) ); */
+    background-image: linear-gradient(to top right, rgb(28,34,189), rgb(200, 35, 128)  );
+    /* color: #f9f9f9; */
+  }
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo{
+    font-size: 2em;
+    color:#f8f6f6 ;
+    pointer-events: none;
+    margin-right: 270px;
+
+}
+.navigation a {
+    padding: 100px;
+    text-decoration: none;
+    color: #f8f6f6; 
+    font-weight: 400px;
+    /* padding : 6px 15px;
+    border-radius: 20px;
+    margin: */
+
+}
+
+.navigation a{
+    padding: 6px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 200;
+    font-size: 1.5em;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #f8f6f6;
+        color: rgb(214, 165, 17);
+    cursor: pointer;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#text{
+    position:absolute ;
+    font-size: 6em;
+    font-family: 'Kaushan Script', cursive;
+    color: #003329;
+    text-shadow: 2px 2px 4px rgba(0,0,0 .2);
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #f8f6f6;
+    margin-bottom: 10px; 
+
+}
+
+.sec p{
+    font-size: larger;
+    color: #f8f6f6;
+    font-weight: 300;
+
+}
